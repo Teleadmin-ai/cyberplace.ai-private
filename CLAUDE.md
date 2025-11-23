@@ -17,17 +17,41 @@ Je suis transhumaniste et je pense à une société cybernétique sans politique
 gouvernée par la raison et la science.
 
 ═══════════════════════════════════════════════════════════════════════════════
-🌐 ÉCOSYSTÈME DES SITES TELEADMIN
+🛠️ DESCRIPTION DU SITE — CYBERPLACE.AI
 ═══════════════════════════════════════════════════════════════════════════════
 
-cyberplace.ai fait partie de l'écosystème Teleadmin :
+**cyberplace.ai** est le **Site de Support et d'Accès aux Ressources** de l'écosystème Teleadmin.
+
+### Fonctionnalités principales :
+
+- **Centre de support** : Documentation, FAQ, guides utilisateur
+- **Accès aux ressources** : APIs, SDKs, bibliothèques, exemples de code
+- **Documentation technique** : Guides d'intégration R-JEPA
+- **Communauté** : Forum, issues, contributions
+- **Status des services** : État des APIs et services cloud
+
+### Sections du site :
+
+1. **Documentation** : Guides complets pour tous les produits
+2. **API Reference** : Documentation des endpoints R-JEPA
+3. **Tutorials** : Guides pas-à-pas
+4. **Downloads** : SDKs, checkpoints, datasets
+5. **Support** : Contact, FAQ, troubleshooting
+6. **Status** : Monitoring des services
+
+### Tagline :
+"Your Gateway to AI Resources"
+
+═══════════════════════════════════════════════════════════════════════════════
+🌐 ÉCOSYSTÈME DES SITES TELEADMIN
+═══════════════════════════════════════════════════════════════════════════════
 
 | Site | Domaine | Description |
 |------|---------|-------------|
 | Hub central | teleadmin.net | Vitrine entreprise |
 | R-JEPA | cognition4ai.com | World Model pour le raisonnement |
-| Chat | cognition4chat.com | Interface chat AI |
-| **Cyberplace** | **cyberplace.ai** | **CE SITE - Plateforme AI** |
+| Chat | cognition4chat.com | WebChat Agentique R-JEPA |
+| **Support** | **cyberplace.ai** | **CE SITE - Support & Ressources** |
 | Services EU | teleadmin.eu | Services européens |
 
 ═══════════════════════════════════════════════════════════════════════════════
@@ -42,7 +66,7 @@ cyberplace.ai fait partie de l'écosystème Teleadmin :
 │   Contenu: CLAUDE.md, tokens, configs sensibles, notes stratégiques         │
 └─────────────────────────────────────────────────────────────────────────────┘
 
-📁 ARCHITECTURE LOCALE AVEC SYMLINKS WINDOWS :
+📁 ARCHITECTURE LOCALE :
 
 ```
 C:\Users\teleadmin\cyberplace.ai\
@@ -54,17 +78,19 @@ C:\Users\teleadmin\cyberplace.ai\
 ├── .token-private    ──► private/.token-private      # SYMLINK (token PRIVÉ)
 │
 ├── private/                           # Repo PRIVÉ (exclu du public)
-│   ├── .git/                          # Son propre git indépendant
+│   ├── .git/
 │   ├── .gitignore
-│   ├── CLAUDE.md                      # ◄── CE FICHIER (le vrai)
+│   ├── CLAUDE.md                      # ◄── CE FICHIER
 │   ├── .token                         # Token repo PUBLIC
 │   └── .token-private                 # Token repo PRIVÉ
 │
-├── index.html                         # Page d'accueil
+├── index.html                         # Page d'accueil support
+├── docs/                              # Documentation
+├── api/                               # API Reference
 ├── css/
 ├── js/
 ├── images/
-└── CNAME                              # Domaine : cyberplace.ai
+└── CNAME                              # cyberplace.ai
 ```
 
 ═══════════════════════════════════════════════════════════════════════════════
@@ -72,7 +98,7 @@ C:\Users\teleadmin\cyberplace.ai\
 ═══════════════════════════════════════════════════════════════════════════════
 
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│ ⚠️  IDENTIFIANTS GIT OBLIGATOIRES (à configurer dans CHAQUE repo)           │
+│ ⚠️  IDENTIFIANTS GIT OBLIGATOIRES                                            │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                              │
 │   git config user.name "teleadmin"                                          │
@@ -81,11 +107,11 @@ C:\Users\teleadmin\cyberplace.ai\
 └─────────────────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│ FICHIERS TOKENS (dans private/, accessibles via symlinks)                    │
+│ TOKENS (dans private/, accessibles via symlinks)                             │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                              │
-│   .token           → Token pour repo PUBLIC (cyberplace.ai)                 │
-│   .token-private   → Token pour repo PRIVÉ (cyberplace.ai-private)          │
+│   .token           → cyberplace.ai (PUBLIC)                                 │
+│   .token-private   → cyberplace.ai-private (PRIVÉ)                          │
 │                                                                              │
 └─────────────────────────────────────────────────────────────────────────────┘
 
@@ -161,6 +187,58 @@ mklink .token-private private\.token-private
 ```
 
 ═══════════════════════════════════════════════════════════════════════════════
+📚 CONTENU DU SITE — SUPPORT & RESSOURCES
+═══════════════════════════════════════════════════════════════════════════════
+
+### Page d'accueil (index.html)
+
+1. **Hero Section**
+   - Titre : "Cyberplace"
+   - Tagline : "Your Gateway to AI Resources"
+   - Recherche rapide dans la documentation
+
+2. **Quick Links**
+   - Documentation R-JEPA
+   - API Reference
+   - Tutorials
+   - Downloads
+
+3. **Getting Started**
+   - Installation guide
+   - Quick start
+   - First project
+
+4. **Resources Grid**
+   - SDKs (Python, JS)
+   - Checkpoints
+   - Datasets
+   - Examples
+
+5. **Support**
+   - FAQ
+   - Contact
+   - Community forum
+   - GitHub Issues
+
+6. **Service Status**
+   - API Status
+   - Cloud Services
+   - Uptime
+
+### Structure des pages :
+
+```
+/index.html           → Accueil
+/docs/                → Documentation
+/docs/getting-started → Guide démarrage
+/docs/api-reference   → API docs
+/tutorials/           → Tutoriels
+/downloads/           → Téléchargements
+/support/             → Support & FAQ
+/status/              → Status services
+```
+
+═══════════════════════════════════════════════════════════════════════════════
 🌐 GITHUB PAGES — CONFIGURATION
 ═══════════════════════════════════════════════════════════════════════════════
 
@@ -195,9 +273,8 @@ CLAUDE.md
 | Fichier | Status |
 |---------|--------|
 | index.html | ⏳ À créer |
+| docs/ | ⏳ À créer |
 | css/style.css | ⏳ À créer |
 | CNAME | ⏳ À créer |
-| robots.txt | ⏳ À créer |
-| sitemap.xml | ⏳ À créer |
 
 ═══════════════════════════════════════════════════════════════════════════════
