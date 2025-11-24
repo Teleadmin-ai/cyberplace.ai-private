@@ -43,16 +43,47 @@ gouvernée par la raison et la science.
 "Your Gateway to AI Resources"
 
 ═══════════════════════════════════════════════════════════════════════════════
-🌐 ÉCOSYSTÈME DES SITES TELEADMIN
+🌐 ÉCOSYSTÈME TELEADMIN — POSITION DANS L'ARCHITECTURE
 ═══════════════════════════════════════════════════════════════════════════════
 
-| Site | Domaine | Description |
-|------|---------|-------------|
-| Hub central | teleadmin.net | Vitrine entreprise |
-| R-JEPA | cognition4ai.com | World Model pour le raisonnement |
-| Chat | cognition4chat.com | WebChat Agentique R-JEPA |
-| **Support** | **cyberplace.ai** | **CE SITE - Support & Ressources** |
-| Services EU | teleadmin.eu | Services européens |
+```
+                        TELEADMIN.NET
+                        (Hub Central)
+                             │
+              ┌──────────────┼──────────────┐
+              │              │              │
+        TELEADMIN.EU  ╔══════════════╗  [AUTRES]
+         (Hosting)    ║CYBERPLACE.AI ║   [FUTUR]
+                      ║  CE SITE     ║
+                      ║ AI Products  ║
+                      ║  Showcase    ║
+                      ╚══════╤═══════╝
+                             │
+           ┌─────────────────┼─────────────────┐
+           │                 │                 │
+      COGNITION4AI    COGNITION4CHAT    TELEADMIN.AI
+        R-JEPA         WebChat Agent      [FUTUR]
+      World Model       via R-JEPA      AI Admin/Sécu
+```
+
+**Rôle dans l'écosystème** :
+- **Portail central** des produits AI Teleadmin
+- **Documentation technique** pour R-JEPA et WebChat
+- **Ressources développeurs** : SDKs, APIs, exemples
+- **Support utilisateur** : FAQ, tutorials, troubleshooting
+
+| Site | Domaine | Relation avec cyberplace |
+|------|---------|--------------------------|
+| teleadmin.net | Hub Central | Redirige vers cyberplace pour support AI |
+| **cyberplace.ai** | **CE SITE** | **Vitrine & Doc des produits AI** |
+| cognition4ai.com | R-JEPA World Model | Documenté sur ce site |
+| cognition4chat.com | WebChat Agent | Tutoriels sur ce site |
+| teleadmin.ai | AI Admin [FUTUR] | Sera documenté ici |
+
+**Produits AI documentés** :
+- **cognition4ai.com** — R-JEPA World Model (API Reference, SDKs)
+- **cognition4chat.com** — WebChat Agentique (Guides, Tutorials)
+- **teleadmin.ai** — Assistant AI Admin/Sécu [FUTUR]
 
 ═══════════════════════════════════════════════════════════════════════════════
 🔐 ARCHITECTURE DUAL REPO (PUBLIC + PRIVÉ) AVEC SYMLINKS
